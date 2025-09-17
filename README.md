@@ -64,3 +64,29 @@ Folder: `MovieLibrary_TypedHints`
   - JSON read/write (`load_all`, `save_all`),
   - command-line argument parsing with Typer.
 - Folder: `fleet_manager`
+
+### Employee CSV Gateway
+- A project that demonstrates working with **CSV files** for employee storage.  
+- Implements:
+  - `employee_csv.py` with import/export functions using `csv.DictReader` and `csv.DictWriter`.  
+  - Example dataset `employees.csv`.  
+- Shows best practices for UTF-8 encoding and `newline=""`.  
+- Folder: `employee_csv_gateway`
+
+### Employee JSON Store
+- A project for managing employees stored in **JSON format**.  
+- Implements:
+  - `employee_store` package with data schema and helper functions.  
+  - Uses `dataclasses`, schema versioning, and logging.  
+- Demonstrates safe JSON read/write and structured code organization.  
+- Folder: `employee_json_store`
+
+### Employee Stats
+- A mini project for generating **statistics from employee data**.  
+- Implements:
+  - `employee.py` – Employee dataclass.  
+  - `stats.py` – business logic for statistics (avg salary, max salary per department, counts).  
+  - `storage.py` – JSON storage handling.  
+  - `cli.py` – Typer CLI for stats commands.  
+- Data is persisted in `_data/`.  
+- Folder: `employee_stats`
