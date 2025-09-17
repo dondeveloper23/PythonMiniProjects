@@ -40,3 +40,27 @@ Folder: `MovieLibrary_TypedHints`
   - `deposit` and `withdraw` methods with validation rules,
   - demo showing controlled balance changes and error handling with `try/except`.
 - Folder: `Encapsulation`
+
+### Banking_System
+- A mini project simulating a simple banking system.  
+- Implements:
+  - `BankAccount` with balance, deposit, withdraw, overdraft limit, and transaction history,
+  - `SavingsAccount` as a subclass with annual interest accrual (10% after one year).
+- Demonstrates:
+  - use of encapsulation with private attributes (`__balance`, `__overdraft_limit`),
+  - inheritance and method overriding (`deposit`, `accrue_interest`),
+  - logging and formatting of transactions with timestamps.
+- Folder: `banking_system`
+
+### Fleet Manager
+- A CLI-based fleet management tool using **Typer** and **JSON** for storage.
+- Implements:
+  - `add` – add a new vehicle (with auto-incrementing ID),
+  - `list` – display all stored vehicles,
+  - `version` – show the app version.
+- Data is persisted in `_data/fleet.json` and automatically created if missing.
+- Demonstrates:
+  - use of `pathlib.Path` for file handling,
+  - JSON read/write (`load_all`, `save_all`),
+  - command-line argument parsing with Typer.
+- Folder: `fleet_manager`

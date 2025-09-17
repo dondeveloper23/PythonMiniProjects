@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "employees": [
+    {
+      "id": 2,
+      "name": "Marko",
+      "department": "QA",
+      "salary": 45000,
+      "tags": []
+    }
+  ]
+}
