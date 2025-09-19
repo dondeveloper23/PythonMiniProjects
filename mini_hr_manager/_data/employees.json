@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "employees": [
+    {
+      "id": 1,
+      "name": "John",
+      "department": "Dev",
+      "salary": 1200.0
+    },
+    {
+      "id": 2,
+      "name": "Ana",
+      "department": "HR",
+      "salary": 900.0
+    }
+  ]
+}

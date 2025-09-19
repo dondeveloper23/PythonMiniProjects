@@ -90,3 +90,26 @@ Folder: `MovieLibrary_TypedHints`
   - `cli.py` – Typer CLI for stats commands.  
 - Data is persisted in `_data/`.  
 - Folder: `employee_stats`
+
+### safe_io_atomic_write
+- A project demonstrating **safe file write operations** with atomic replace.
+- Implements helper functions to ensure data consistency when saving files:
+  - write to a temporary file,
+  - flush and sync to disk,
+  - atomically replace the target file.
+- Prevents corruption in case of crashes or interruptions.
+- Folder: `safe_io_atomic_write`
+
+### mini_hr_manager
+- A complete **HR management CLI app** with JSON/CSV storage and statistics.
+- Implements:
+  - `add` – add a new employee,
+  - `list` – show all employees,
+  - `delete` – remove employee by ID,
+  - `statistics` – show avg salary, highest paid, top N employees, and counts per department.
+- Includes `pytest` tests for storage, business logic, and statistics functions.
+- Demonstrates:
+  - use of `dataclasses` for structured data,
+  - JSON read/write and data validation,
+  - Typer CLI for user interaction.
+- Folder: `mini_hr_manager`
